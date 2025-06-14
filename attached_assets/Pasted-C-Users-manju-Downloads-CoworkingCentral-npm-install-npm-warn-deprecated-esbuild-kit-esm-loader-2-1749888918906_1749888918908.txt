@@ -1,0 +1,75 @@
+C:\Users\manju\Downloads\CoworkingCentral>npm install
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+
+added 478 packages, and audited 479 packages in 36s
+
+63 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (1 low, 7 moderate)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm notice
+npm notice New major version of npm available! 10.9.2 -> 11.4.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+npm notice To update run: npm install -g npm@11.4.2
+npm notice
+
+C:\Users\manju\Downloads\CoworkingCentral>npm run dev
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+'NODE_ENV' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manju\Downloads\CoworkingCentral>npm audit fix --force
+npm warn using --force Recommended protections disabled.
+npm warn audit Updating drizzle-kit to 0.31.1, which is a SemVer major change.
+
+removed 4 packages, changed 13 packages, and audited 475 packages in 18s
+
+63 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+esbuild  <=0.24.2
+Severity: moderate
+esbuild enables any website to send any requests to the development server and read the response - https://github.com/advisories/GHSA-67mh-4wv8-2f99
+fix available via `npm audit fix --force`
+Will install vite@6.3.5, which is a breaking change
+node_modules/@esbuild-kit/core-utils/node_modules/esbuild
+node_modules/vite/node_modules/esbuild
+  @esbuild-kit/core-utils  *
+  Depends on vulnerable versions of esbuild
+  node_modules/@esbuild-kit/core-utils
+    @esbuild-kit/esm-loader  *
+    Depends on vulnerable versions of @esbuild-kit/core-utils
+    node_modules/@esbuild-kit/esm-loader
+      drizzle-kit  0.17.5-6b7793f - 0.17.5-e5944eb || 0.18.1-065de38 - 0.18.1-f3800bf || >=0.19.0-07024c4
+      Depends on vulnerable versions of @esbuild-kit/esm-loader
+      node_modules/drizzle-kit
+  vite  0.11.0 - 6.1.6
+  Depends on vulnerable versions of esbuild
+  node_modules/vite
+    @vitejs/plugin-react  2.0.0-alpha.0 - 4.3.3
+    Depends on vulnerable versions of vite
+    node_modules/@vitejs/plugin-react
+
+6 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+C:\Users\manju\Downloads\CoworkingCentral>
